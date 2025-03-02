@@ -1,0 +1,35 @@
+$primary-color: #1e1e2e;
+$secondary-color: #cba6f7;
+$text-color: #ffffff;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $primary-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px $secondary-color;
+}
+
+button {
+    background: $secondary-color;
+    color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+    &:hover {
+        background: lighten($secondary-color, 10%);
+    }
+}

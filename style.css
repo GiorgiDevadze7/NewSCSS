@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: moveAndColorChange 4s infinite;
+}
+
+@keyframes moveAndColorChange {
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+    25% {
+        transform: translateX(150px);
+        background-color: #e74c3c;
+    }
+    50% {
+        transform: translateX(300px);
+        background-color: #2ecc71;
+    }
+    75% {
+        transform: translateX(150px);
+        background-color: #f39c12;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
